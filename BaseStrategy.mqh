@@ -1,10 +1,10 @@
 //+------------------------------------------------------------------+
-//|                                            StrategyMurreyH_3.mqh |
-//|                                                              UAS |
-//|                                                                  |
+//|                                                 BaseStrategy.mqh |
+//|                                               alexoro a.k.a. UAS |
+//|                   https://github.com/alexoro/mt4-expert-template |
 //+------------------------------------------------------------------+
-#property copyright "UAS"
-#property link      ""
+#property copyright "alexoro"
+#property link      "https://github.com/alexoro/mt4-expert-template"
 #property version   "1.00"
 #property strict
 //+------------------------------------------------------------------+

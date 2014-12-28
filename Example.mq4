@@ -1,10 +1,10 @@
 //+------------------------------------------------------------------+
 //|                                                      Example.mq4 |
-//|                                                              UAS |
-//|                                              http://www.mql4.com |
+//|                                               alexoro a.k.a. UAS |
+//|                   https://github.com/alexoro/mt4-expert-template |
 //+------------------------------------------------------------------+
-#property copyright "UAS"
-#property link      "http://www.mql4.com"
+#property copyright "alexoro"
+#property link      "https://github.com/alexoro/mt4-expert-template"
 #property version   "1.00"
 #property strict
 
