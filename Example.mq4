@@ -10,6 +10,10 @@
 
 #include "./BaseStrategy.mqh"
 
+extern int exMagicNumber = 548357385;
+extern double exMoneyRiskPercentage = 0.10;
+
+
 class StrategyImpl: public BaseStrategy {
 
     public:
@@ -38,7 +42,7 @@ class StrategyImpl: public BaseStrategy {
          * magic number for orders
          */
         virtual int getOrderMagicNumber() {
-            return 548357385;
+            return exMagicNumber;
         }
         
         /**
@@ -49,7 +53,7 @@ class StrategyImpl: public BaseStrategy {
             double maSlow = iMA(NULL, PERIOD_H1, 21, 0, MODE_EMA, PRICE_CLOSE, 1);
             if (maFast < maSlow) {
                 type = OP_SELL;
-                lots = 1;
+                lots = calculateLot(exMoneyRiskPercentage, Bid);;
                 price = Bid;
                 sl = 0;
                 tp = 0;
